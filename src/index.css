@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900;1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+    background-color: #FFFBF7;
+  }
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-gradient-to-r from-festa-orange to-festa-pink text-white font-bold py-3 px-7 rounded-full shadow-festa hover:shadow-festa-lg hover:scale-105 transition-all duration-300 cursor-pointer select-none;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 bg-white text-festa-orange border-2 border-festa-orange font-bold py-3 px-7 rounded-full hover:bg-festa-orange hover:text-white hover:scale-105 transition-all duration-300 cursor-pointer select-none;
+  }
+  .btn-whatsapp {
+    @apply inline-flex items-center gap-2 bg-gradient-to-r from-green-500 to-green-600 text-white font-bold py-3 px-7 rounded-full hover:from-green-600 hover:to-green-700 hover:scale-105 transition-all duration-300 cursor-pointer select-none shadow-lg;
+  }
+  .card {
+    @apply bg-white rounded-3xl shadow-card hover:shadow-card-hover transition-all duration-300;
+  }
+  .section-title {
+    @apply text-3xl md:text-5xl font-black text-gray-800 leading-tight;
+  }
+  .section-subtitle {
+    @apply text-lg text-gray-500 mt-3 font-medium;
+  }
+  .gradient-text {
+    @apply bg-gradient-to-r from-festa-orange via-festa-pink to-festa-purple bg-clip-text text-transparent;
+  }
+  .gradient-bg {
+    @apply bg-gradient-to-r from-festa-orange via-festa-pink to-festa-purple;
+  }
+  .section-padding {
+    @apply py-16 md:py-24 px-4;
+  }
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+  .badge {
+    @apply inline-flex items-center gap-1 text-xs font-bold px-3 py-1 rounded-full;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .text-gradient {
+    background: linear-gradient(135deg, #FF6B35 0%, #FF4D9E 50%, #7C3AED 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+/* Confetti animation */
+.confetti-piece {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  animation: confettiFall 1s ease-out forwards;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+@keyframes confettiFall {
+  0% {
+    transform: translateY(-20px) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100px) rotate(720deg) scale(0);
+    opacity: 0;
+  }
+}
+
+/* Smooth page transitions */
+.page-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}

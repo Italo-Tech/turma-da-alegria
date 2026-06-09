@@ -1,0 +1,42 @@
+export const testimonials = [
+  {
+    id: 1,
+    name: 'Ana Paula Ferreira',
+    role: 'Mãe da Mariana, 5 anos',
+    avatar: '👩',
+    rating: 5,
+    text: 'A Turma da Alegria transformou a festa da minha filha! A piscina de bolinhas e a cama elástica foram um sucesso absoluto. As crianças não queriam ir embora! Super recomendo o serviço, muito profissional e pontual.',
+  },
+  {
+    id: 2,
+    name: 'Carlos Eduardo',
+    role: 'Pai do Pedro e da Sofia',
+    avatar: '👨',
+    rating: 5,
+    text: 'Fiz o Combo Festa Completa e foi a melhor decisão! Equipe super atenciosa, equipamentos higienizados e montagem rapidíssima. Meus filhos adoraram o castelinho e o tobogã. Com certeza vou contratar de novo!',
+  },
+  {
+    id: 3,
+    name: 'Juliana Moreira',
+    role: 'Organizadora de Eventos',
+    avatar: '👩‍💼',
+    rating: 5,
+    text: 'Trabalho com organização de eventos infantis há 8 anos e a Turma da Alegria é minha parceira preferida! Sempre entregam no prazo, equipamentos de qualidade e atendimento impecável. Minhas clientes adoram!',
+  },
+  {
+    id: 4,
+    name: 'Roberto Alves',
+    role: 'Pai do Gabriel, 7 anos',
+    avatar: '👨‍👦',
+    rating: 5,
+    text: 'O Touro Mecânico foi o destaque absoluto da festa! Crianças e adultos se divertiram muito. A equipe da Turma da Alegria é muito profissional e o equipamento é super seguro. Valeu demais!',
+  },
+  {
+    id: 5,
+    name: 'Fernanda Lima',
+    role: 'Mãe da Yasmin, 4 anos',
+    avatar: '👩‍👧',
+    rating: 5,
+    text: 'Simplesmente perfeito! O futebol de sabão foi uma novidade que todo mundo adorou — adultos brincaram mais que as crianças haha! Atendimento via WhatsApp super rápido. Nota 10!',
+  },
+]
